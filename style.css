@@ -127,6 +127,10 @@ p {
     object-fit: contain;
 }
 
+.clg-logo {
+    border-radius: 50%;
+}
+
 /* Nav Container - Reset floating styles */
 .floating-nav {
     background: transparent;
@@ -333,6 +337,7 @@ p {
     /* Reorder for Mobile: Logo(1) - College(2) - Menu(3) */
     .idc-logo {
         order: 1;
+        border-radius: 50px;
     }
 
     .clg-logo {
@@ -341,6 +346,7 @@ p {
         /* Reduced from 600px to prevent pushing off-screen */
         margin-left: 15px;
         height: 50px;
+        border-radius: 50px;
         /* Increased from 40px for better visibility */
     }
 
