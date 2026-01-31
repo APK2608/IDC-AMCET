@@ -605,6 +605,109 @@ p {
     border-bottom: none;
 }
 
+./* Event detail - center aligned on desktop, left aligned on mobile */
+.content-section .container,
+.content-section .container h2,
+.content-section .container h3,
+.content-section .container p,
+.content-section .container ul,
+.content-section .container li,
+.content-section .container span {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content-section .container,
+    .content-section .container h2,
+    .content-section .container h3,
+    .content-section .container p,
+    .content-section .container ul,
+    .content-section .container li,
+    .content-section .container span {
+        text-align: left;
+    }
+}
+
+/* Agenda block with time-based layout */
+.agenda {
+    background: rgba(255,255,255,0.03);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.agenda-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.agenda-item:last-child {
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.agenda-time {
+    color: var(--highlight-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.agenda-title {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.agenda-description {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.agenda .note {
+    font-style: italic;
+    color: rgba(255,255,255,0.7);
+    margin-top: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Mobile responsive adjustments for agenda */
+@media (max-width: 768px) {
+    .agenda {
+        padding: 15px;
+    }
+    
+    .agenda-item {
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+    }
+    
+    .agenda-time {
+        font-size: 0.9rem;
+    }
+    
+    .agenda-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Make poster image fully responsive */
+.content-section img[alt="Event Poster"] {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .page-header {
     padding-top: 120px;
     padding-bottom: 60px;
